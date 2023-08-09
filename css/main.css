@@ -1,7 +1,137 @@
-body{
-    background-color: aquamarine;
+/* Reset some default browser styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-h1{
-    background-color: brown;
+body {
+    padding-top: 70px;  /* Adjust based on the height of your navbar. This prevents content from being hidden behind the navbar. */
+}
+
+/* Styling the fixed navbar */
+.navbar {
+    background-color: #000000; /* A dark background color */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;  /* Ensure the navbar remains on top of other content */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #f7f7f7; /* A light font color */
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff; /* A slightly brighter color on hover */
+}
+
+.social-links a {
+    margin-left: 10px;
+    color: #f7f7f7;
+    font-size: 24px; /* Adjust based on your preference */
+}
+
+.social-links a:hover {
+    color: #ffffff; /* Brighten up on hover */
+}
+
+/* Styling the hero section */
+#hero {
+    background: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center center fixed;
+    background-size: cover; /* This will cover the entire viewport */
+    color: #ffffff; /* White text color for contrast */
+    height: 100vh; /* Take full viewport height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+#hero .display-1 {
+    font-size: 7rem; /* A large font size for the main title */
+}
+
+#hero p {
+    font-size: 1.5rem; /* A larger font size for the subtitle */
+    margin-top: 20px; /* Spacing between title and subtitle */
+}
+
+#hero .btn {
+    margin-top: 30px; /* Spacing between subtitle and button */
+    border-color: #ffffff; /* White border for the button */
+}
+/* SERVICES */
+#services {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+#services .intro {
+    margin-bottom: 50px;
+}
+
+#services .hr-line {
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    margin: 0 auto 20px;
+}
+
+#services h1.display-4 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#services p {
+    font-size: 1em;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#services .service {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#services .service:hover {
+    transform: translateY(-10px);
+}
+
+#services .service .icon {
+    font-size: 2em;
+    color: #333;
+    margin-right: 20px;
+}
+
+#services .service h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#services .service p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#services .service .link-arrow {
+    color: #007BFF;  /* You can change this to your primary color */
+    transition: color 0.3s ease;
+}
+
+#services .service .link-arrow:hover {
+    color: #0056b3;  /* You can change this to your primary hover color */
+    text-decoration: none;
+}
+
+#services .service .link-arrow i {
+    margin-left: 5px;
 }
