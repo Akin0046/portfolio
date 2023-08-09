@@ -135,56 +135,44 @@ body {
 #services .service .link-arrow i {
     margin-left: 5px;
 }
-
-
-/* WORK Section */
-#work {
-    padding: 100px 0 50px; /* Top padding consistent with the services section */
-    background-color: #f7f7f7; /* Keeping the background consistent */
+/*  */
+  
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/* Mobile view: screens smaller than 576px */
+@media (max-width: 575.98px) {
+    #hero .display-1 {
+        font-size: 4rem; /* Adjust main title size */
+    }
+    
+    #hero p {
+        font-size: 1.2rem; /* Adjust subtitle size */
+    }
+    
+    /* Adjust service icon size for mobile */
+    #services .service .icon {
+        font-size: 1.5em;
+    }
 }
 
-#work .intro {
-    margin-bottom: 50px;
+/* Tablet view: screens from 576px to 991px */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    #hero .display-1 {
+        font-size: 5rem; /* Adjust main title size */
+    }
+    
+    #hero p {
+        font-size: 1.3rem; /* Adjust subtitle size */
+    }
+    
+    /* Adjust service icon size for tablet */
+    #services .service .icon {
+        font-size: 1.8em;
+    }
 }
 
-#work .hr-line {
-    width: 50px;
-    height: 3px;
-    background-color: #333;
-    margin: 0 auto 20px;
-}
-
-#work h1.display-4 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#work p {
-    font-size: 1em;
-    color: #777;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Insta posts grid */
-#work #insta-posts {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    gap: 20px; /* Gap between images */
-}
-
-#work #insta-posts img {
-    width: 100%; /* Each image will occupy the full width of its column */
-    height: auto;
-    border-radius: 5px; /* You can adjust this value or remove it */
-    transition: transform 0.3s ease;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-#work #insta-posts img:hover {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Insta follow button is already styled in the original CSS, no changes required. */
