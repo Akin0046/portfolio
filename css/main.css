@@ -175,4 +175,12 @@ body {
         font-size: 1.8em;
     }
 }
+/* image gallery */
+.img-fluid {
+    margin: 5px;
+    transition: transform .2s; /* Animation */
+}
 
+.img-fluid:hover {
+    transform: scale(1.1);
+}
