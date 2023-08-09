@@ -62,7 +62,7 @@ body {
 }
 /* SERVICES */
 #services {
-    padding: 50px 0;
+    padding: 200px 0 50px; /* Increased top padding to 100px */
     background-color: #f7f7f7;
 }
 
