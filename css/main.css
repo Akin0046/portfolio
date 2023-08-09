@@ -137,34 +137,54 @@ body {
 }
 
 
-
-/* insta posts */
-#insta-posts {
-    position: relative;
+/* WORK Section */
+#work {
+    padding: 100px 0 50px; /* Top padding consistent with the services section */
+    background-color: #f7f7f7; /* Keeping the background consistent */
 }
 
-.insta-follow {
-    width: 90px;
-    height: 90px;
-    background-color: var(--dark);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 44px;
-    border-radius: var(--border-radius);
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+#work .intro {
+    margin-bottom: 50px;
 }
 
-.insta-follow:hover {
-    background-color: white;
+#work .hr-line {
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    margin: 0 auto 20px;
 }
 
-#insta-posts:hover .insta-follow {
-    opacity: 1;
-    top: 50%;
+#work h1.display-4 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
 }
+
+#work p {
+    font-size: 1em;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Insta posts grid */
+#work #insta-posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Gap between images */
+}
+
+#work #insta-posts img {
+    width: 100%; /* Each image will occupy the full width of its column */
+    height: auto;
+    border-radius: 5px; /* You can adjust this value or remove it */
+    transition: transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#work #insta-posts img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Insta follow button is already styled in the original CSS, no changes required. */
